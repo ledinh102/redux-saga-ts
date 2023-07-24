@@ -17,7 +17,7 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       {/* <PrivateRoute path="/admin" element={<AdminLayout />} /> */}
       <Route path="/admin" element={<PrivateRoute />} />
-      <Route path="/" element={<Navigate replace to="/login" />} />
+      <Route path="/" element={<Navigate to="/login" />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
